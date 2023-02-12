@@ -1,1 +1,13 @@
-/*hoiejfaoijeofi
+#app {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cell {
+    width: 150px;
+    height: 150px; 
+    border: 3px dotted pink;
+    background-color: lavender; 
+}
