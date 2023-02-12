@@ -4,10 +4,14 @@ let gameBoardTTT = [
     [undefined, undefined, undefined]
 ]
 for (let i = 0; i < gameBoardTTT.length; i++) {
-     let currentElement = gameBoardTTT[i]
-     console.log(currentElement)
-     for (let nestedI = 0; nestedI < currentElement.length; nestedI++) {
-     let nestedElement = currentElement[nestedI];
-    console.log(nestedElement)
-     }
+    let currentRow = gameBoardTTT[i]; 
+    let xTracker
+    let oTracker
+    for (let j = 0; j < gameBoardTTT.length; j++) {
+        if (currentRow[j] == "X") {
+            xTracker = xTracker + 1
+        } else {
+             oTracker = oTracker + 1
+        }
+    }
 }
