@@ -7,5 +7,11 @@ let gameBoard = [];
 let valueOfClickCount = 0;
 
 function increaseClickCount(event) {
+    let valueOfCellClicked = parseInt(event.target.classList[1])
+    valueOfClickCount = valueOfClickCount + valueOfCellClicked;
+    counterHeaderEle.textContent = valueOfClickCount
+}
+
+function buildGameBoard() {
     
 }
