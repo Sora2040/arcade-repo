@@ -1,17 +1,22 @@
 let mainSectionEle = document.getElementById("main-section")
 
-let counterHeaderEle = document.getElementById("clicker-count")
+let TTTBoard = document.getElementById("TTTBoard")
 
-let gameBoard = [];
+let currentPlayer = "x"
 
-let valueOfClickCount = 0;
+let gameBoard = [
+    [undefined, undefined, undefined],
+    [undefined, undefined, undefined],
+    [undefined, undefined, undefined]
+];
 
-function increaseClickCount(event) {
-    let valueOfCellClicked = parseInt(event.target.classList[1])
-    valueOfClickCount = valueOfClickCount + valueOfCellClicked;
-    counterHeaderEle.textContent = valueOfClickCount
+function clickedCell(event) {
+    if (event.target.innerText == ''){
+        
+        console.log("we good")
+    }
+    console.log(event.target.innerText)
+    console.log("clicked")
 }
 
-function buildGameBoard() {
-    
-}
+TTTBoard.addEventListener("click", clickedCell)
